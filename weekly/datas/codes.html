@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="orientdbPHP static analysis report by Exakat (https://www.exakat.io/) ">
+  <meta name="generator" content="Exakat 1.1.7 (build 698)">
+  <title>PHP Static analysis for orientdb, by Exakat</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="styles/vendor.css">
+
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <script src="scripts/vendor/modernizr.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-yellow-light sidebar-mini">
+  <div class="wrapper">
+
+    <!-- Main Header -->
+    <header class="main-header">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>O</b></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg">orientdb</span>
+      </a>
+
+      <!-- Header Navbar -->
+      <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+                <!-- Sidebar Menu -->
+        <ul class="sidebar-menu">
+          <li class="header">&nbsp;</li>
+          <!-- Optionally, you can add icons to the links -->
+          <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+          <li><a href="weekly.html"><i class="fa fa-flag"></i> <span>Weekly</span></a></li>
+          <li class="treeview">
+            <a href="#"><i class="fa fa-sticky-note-o"></i> <span>Annexes</span><i class="fa fa-angle-left pull-right"></i></a>
+            <ul class="treeview-menu">
+              <li><a href="annex_settings.html"><i class="fa fa-circle-o"></i>Analyzer Settings</a></li>
+              <li><a href="analyzers_doc.html"><i class="fa fa-circle-o"></i>Analyzers Documentation</a></li>
+              <li><a href="codes.html"><i class="fa fa-circle-o"></i>Codes</a></li>
+              <li><a href="credits.html"><i class="fa fa-circle-o"></i>Credits</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div id="main">
+      <div class="content-wrapper" id="ajax-content">
+        <!-- Main content -->
+        <!-- Content Header (Page header) -->
+                <!-- Content Header (Page header) -->
+        <section class="content-header">
+        <h1>
+          Source code
+        </h1>
+        </section>
+
+        <!-- Main content -->
+        <section class="content" id="issues">
+
+        	<div class="box">
+        		<div class="box-body">
+        			<div id="facets" class="filter clearfix"></div>
+                        <div class="dropdown">
+                          <button id="filename" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            File list
+                            <span class="caret"></span>
+                          </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" id="_example.php" class="menuitem">/example.php</a></li>
+<li><a href="#" id="_gremlin.php" class="menuitem">/gremlin.php</a></li>
+<li><a href="#" id="_speedtest.php" class="menuitem">/speedtest.php</a></li>
+<li><a href="#" id="_OrientDB_OrientDB.php" class="menuitem">/OrientDB/OrientDB.php</a></li>
+<li><a href="#" id="_OrientDB_OrientDBDataTypes.php" class="menuitem">/OrientDB/OrientDBDataTypes.php</a></li>
+<li><a href="#" id="_OrientDB_OrientDBHelpers.php" class="menuitem">/OrientDB/OrientDBHelpers.php</a></li>
+<li><a href="#" id="_OrientDB_OrientDBRecord.php" class="menuitem">/OrientDB/OrientDBRecord.php</a></li>
+<li><a href="#" id="_OrientDB_OrientDBRecordDecoder.php" class="menuitem">/OrientDB/OrientDBRecordDecoder.php</a></li>
+<li><a href="#" id="_OrientDB_OrientDBRecordEncoder.php" class="menuitem">/OrientDB/OrientDBRecordEncoder.php</a></li>
+<li><a href="#" id="_OrientDB_OrientDBSocket.php" class="menuitem">/OrientDB/OrientDBSocket.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandAbstract.php" class="menuitem">/OrientDB/Commands/OrientDBCommandAbstract.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandCommand.php" class="menuitem">/OrientDB/Commands/OrientDBCommandCommand.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandCommit.php" class="menuitem">/OrientDB/Commands/OrientDBCommandCommit.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandConfigGet.php" class="menuitem">/OrientDB/Commands/OrientDBCommandConfigGet.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandConfigList.php" class="menuitem">/OrientDB/Commands/OrientDBCommandConfigList.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandConfigSet.php" class="menuitem">/OrientDB/Commands/OrientDBCommandConfigSet.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandConnect.php" class="menuitem">/OrientDB/Commands/OrientDBCommandConnect.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandCount.php" class="menuitem">/OrientDB/Commands/OrientDBCommandCount.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDBClose.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDBClose.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDBCreate.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDBCreate.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDBDelete.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDBDelete.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDBExists.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDBExists.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDBList.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDBList.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDBOpen.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDBOpen.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDataclusterAdd.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDataclusterAdd.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDataclusterCount.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDataclusterCount.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDataclusterDatarange.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDataclusterDatarange.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDataclusterRemove.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDataclusterRemove.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDatasegmentAdd.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDatasegmentAdd.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandDatasegmentDelete.php" class="menuitem">/OrientDB/Commands/OrientDBCommandDatasegmentDelete.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandQuery.php" class="menuitem">/OrientDB/Commands/OrientDBCommandQuery.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandRecordCreate.php" class="menuitem">/OrientDB/Commands/OrientDBCommandRecordCreate.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandRecordDelete.php" class="menuitem">/OrientDB/Commands/OrientDBCommandRecordDelete.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandRecordLoad.php" class="menuitem">/OrientDB/Commands/OrientDBCommandRecordLoad.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandRecordUpdate.php" class="menuitem">/OrientDB/Commands/OrientDBCommandRecordUpdate.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandSelect.php" class="menuitem">/OrientDB/Commands/OrientDBCommandSelect.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandSelectAsync.php" class="menuitem">/OrientDB/Commands/OrientDBCommandSelectAsync.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandSelectGremlin.php" class="menuitem">/OrientDB/Commands/OrientDBCommandSelectGremlin.php</a></li>
+<li><a href="#" id="_OrientDB_Commands_OrientDBCommandShutdown.php" class="menuitem">/OrientDB/Commands/OrientDBCommandShutdown.php</a></li>
+<li><a href="#" id="_SpeedTest_OrientDBRecordSpeedBigTest.php" class="menuitem">/SpeedTest/OrientDBRecordSpeedBigTest.php</a></li>
+<li><a href="#" id="_SpeedTest_OrientDBRecordSpeedTest.php" class="menuitem">/SpeedTest/OrientDBRecordSpeedTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBClassBasicTest.php" class="menuitem">/Tests/OrientDBClassBasicTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandCommandTest.php" class="menuitem">/Tests/OrientDBCommandCommandTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandCommitTest.php" class="menuitem">/Tests/OrientDBCommandCommitTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandConfigGetTest.php" class="menuitem">/Tests/OrientDBCommandConfigGetTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandConfigListTest.php" class="menuitem">/Tests/OrientDBCommandConfigListTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandConfigSetTest.php" class="menuitem">/Tests/OrientDBCommandConfigSetTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandCountTest.php" class="menuitem">/Tests/OrientDBCommandCountTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDBCreateTest.php" class="menuitem">/Tests/OrientDBCommandDBCreateTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDBDeleteTest.php" class="menuitem">/Tests/OrientDBCommandDBDeleteTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDBExistsTest.php" class="menuitem">/Tests/OrientDBCommandDBExistsTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDBListTest.php" class="menuitem">/Tests/OrientDBCommandDBListTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDBOpenTest.php" class="menuitem">/Tests/OrientDBCommandDBOpenTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDataclusterAddTest.php" class="menuitem">/Tests/OrientDBCommandDataclusterAddTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDataclusterCountTest.php" class="menuitem">/Tests/OrientDBCommandDataclusterCountTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDataclusterDatarangeTest.php" class="menuitem">/Tests/OrientDBCommandDataclusterDatarangeTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDataclusterRemoveTest.php" class="menuitem">/Tests/OrientDBCommandDataclusterRemoveTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDatasegmentAddTest.php" class="menuitem">/Tests/OrientDBCommandDatasegmentAddTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandDatasegmentDeleteTest.php" class="menuitem">/Tests/OrientDBCommandDatasegmentDeleteTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandQueryTest.php" class="menuitem">/Tests/OrientDBCommandQueryTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandRecordCreateTest.php" class="menuitem">/Tests/OrientDBCommandRecordCreateTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandRecordDeleteTest.php" class="menuitem">/Tests/OrientDBCommandRecordDeleteTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandRecordLoadTest.php" class="menuitem">/Tests/OrientDBCommandRecordLoadTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandRecordUpdateTest.php" class="menuitem">/Tests/OrientDBCommandRecordUpdateTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandSelectAsyncTest.php" class="menuitem">/Tests/OrientDBCommandSelectAsyncTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandSelectTest.php" class="menuitem">/Tests/OrientDBCommandSelectTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandShutdownTest.php" class="menuitem">/Tests/OrientDBCommandShutdownTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBCommandsBasicTest.php" class="menuitem">/Tests/OrientDBCommandsBasicTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBConnectTest.php" class="menuitem">/Tests/OrientDBConnectTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBConvertComplementTest.php" class="menuitem">/Tests/OrientDBConvertComplementTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBDataTest.php" class="menuitem">/Tests/OrientDBDataTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBI64Test.php" class="menuitem">/Tests/OrientDBI64Test.php</a></li>
+<li><a href="#" id="_Tests_OrientDBRecordEncoderTest.php" class="menuitem">/Tests/OrientDBRecordEncoderTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBRecordTest.php" class="menuitem">/Tests/OrientDBRecordTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBTypeDateTest.php" class="menuitem">/Tests/OrientDBTypeDateTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDBTypeLinkTest.php" class="menuitem">/Tests/OrientDBTypeLinkTest.php</a></li>
+<li><a href="#" id="_Tests_OrientDB_TestCase.php" class="menuitem">/Tests/OrientDB_TestCase.php</a></li>
+
+                        </ul>
+                        </div>
+                      <div class="row">
+                        <div class="col-xs-12" id="results">
+                            <p>Select a file to display.</p>
+                        </div>
+                      </div>
+        		</div>
+        	</div>
+
+        </section>
+
+        <!-- /.content -->
+      </div>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="pull-right hidden-xs">
+        <span class="logo-exakat">
+          <img src="images/logo.png" alt="Exakat">
+          An <a href="https://www.exakat.io" title="exakat">Exakat</a> report
+        </span>
+      </div>
+      <!-- Default to the left -->
+<strong>.</strong>
+      
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+      </ul>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/exakat.js"></script>
+  <script src="scripts/facetedsearch.js"></script>
+    <script>
+  "use strict";
+
+  $('.menuitem').click(function(event){
+    $('#results').load("sources/" + event.target.text);
+    $('#filename').html(event.target.text + '  <span class="caret"></span>');
+  });
+
+  var fileParam = window.location.hash.split('file=')[1];
+  if(fileParam !== undefined) {
+    var limit = fileParam.indexOf('&');
+    if (limit !== -1) {
+        fileParam = fileParam.substr(0, limit);
+    }
+    $('#results').load("sources/" + fileParam);
+    $('#filename').html(fileParam + '  <span class="caret"></span>');
+  }
+
+  var line = window.location.hash.split('line=')[1];
+  if(line !== undefined) {
+        window.location.hash = 'l' + line;
+  }
+  
+
+  </script>
+
+</body>
+</html>
+        
